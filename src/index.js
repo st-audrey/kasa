@@ -7,7 +7,6 @@ import './styles/index.css'
 
 // Components
 import Header from './components/Header/Header'
-import Banner from './components/Banner/Banner'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -21,7 +20,6 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Banner />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -6,16 +6,18 @@ import logo from '../../assets/kasa_logo.png'
 function Header() {
 
     return (
-        <div className='header-navbar'>
+        <header className='header-navbar'>
   
-            <img className='header-logo' src={logo} alt='...'/>
+            <Link to="/">
+                <img className='header-logo' src={logo} alt="Retourner à l'accueil"/>
+            </Link>
             
             <nav className='header-nav'>
                 <Link to="/" className='header-nav-link'>Accueil</Link>
                 <Link to="/about" className='header-nav-link'>A propos</Link>
             </nav>
 
-        </div>
+        </header>
    
     )
 

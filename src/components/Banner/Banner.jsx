@@ -8,7 +8,7 @@ function Banner() {
     return (
         <div className='banner-container banner-common'>
   
-            <img className='banner-img banner-common' width="1240" height="223" src={banner_img} alt="..."/>
+            <img className='banner-img banner-common'src={banner_img} alt="..."/>
             <p className='banner-txt'>Chez vous, partout et ailleurs</p>
           
         </div>

@@ -9,7 +9,7 @@ function Header() {
         <header className='header-navbar'>
   
             <Link to="/">
-                <img className='header-logo' src={logo} alt="Retourner à l'accueil"/>
+                <img className='header-logo' width="211" height="68" src={logo} alt="Retourner à l'accueil"/>
             </Link>
             
             <nav className='header-nav'>

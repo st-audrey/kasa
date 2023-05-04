@@ -5,9 +5,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import './styles/index.css'
 
-import App from './pages/Home/Home'
-import About from './pages/Home/About'
+// Components
 import Header from './components/Header/Header'
+import Banner from './components/Banner/Banner'
+
+// Pages
+import Home from './pages/Home/Home'
+import About from './pages/Home/About'
 import Error404 from './components/Error/Error404'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -16,12 +20,12 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
+      <Banner />
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
-      <App />
     </Router>
   </React.StrictMode>
 )

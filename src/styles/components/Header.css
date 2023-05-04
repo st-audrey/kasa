@@ -16,11 +16,8 @@
   flex-direction: column;
   justify-content: center;
 
-  font-family: Montserrat;
   font-size: 24px;
-  font-weight: 500;
   line-height: 34px;
-  letter-spacing: 0em;
   color: #ff6060;
 }
 
@@ -28,6 +25,7 @@
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .header-logo {
     width: 145px;
+    height: auto;
   }
 }
 
@@ -35,6 +33,7 @@
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .header-logo {
     width: 145px;
+    height: auto;
   }
 
   .header-nav {

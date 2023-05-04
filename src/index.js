@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import App from './pages/Home/home'
+import App from './pages/Home/Home'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import About from './pages/Home/about'
-import Header from './components/Header/header'
-import Error404 from './components/Error/error404'
+import About from './pages/Home/About'
+import Header from './components/Header/Header'
+import Error404 from './components/Error/Error404'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -20,6 +20,5 @@ root.render(
       </Routes>
       <App />
     </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 )

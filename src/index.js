@@ -1,8 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
-import App from './pages/Home/Home'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+import './styles/index.css'
+
+import App from './pages/Home/Home'
 import About from './pages/Home/About'
 import Header from './components/Header/Header'
 import Error404 from './components/Error/Error404'

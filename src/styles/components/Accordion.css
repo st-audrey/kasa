@@ -1,0 +1,39 @@
+.accordion-container {
+  margin-top: 30px;
+  padding: 0 20px 0;
+  width: 100%;
+  height: 47px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.accordion-title-container {
+  width: 50%;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accordion-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.accordion-carret-container {
+  width: 50%;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accordion-carret {
+  cursor: pointer;
+  width: 24px;
+  height: auto;
+  display: flex;
+  align-self: end;
+}

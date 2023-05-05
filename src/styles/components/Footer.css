@@ -1,5 +1,9 @@
 .footer-container {
+  margin-top: 200px;
+  position: fixed;
+  bottom: 0;
   width: 100%;
+  max-width: 1440px;
   height: 210px;
   background-color: black;
   display: flex;

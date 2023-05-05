@@ -37,3 +37,16 @@
   display: flex;
   align-self: end;
 }
+
+.accordion-content-container {
+  padding: 20px;
+  width: 100%;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.accordion-content {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}

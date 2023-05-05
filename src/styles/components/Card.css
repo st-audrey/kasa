@@ -1,0 +1,6 @@
+.card-container {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ff6060 0%, rgba(0, 0, 0, 0.5) 100%);
+}

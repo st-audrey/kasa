@@ -5,8 +5,16 @@
   font-weight: 500;
 }
 
+.color-primary {
+  color: #ff6060;
+}
+
 .m-0-auto {
   margin: 0 auto;
+}
+
+.d-none {
+  display: none;
 }
 
 /* .mt-1{

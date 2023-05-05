@@ -18,7 +18,7 @@ function Banner() {
   
             <img className='banner-img banner-common'src={imageToDisplay} alt="..."/>
            
-            <p className= {location.pathname === "/" ? 'banner-txt' : 'banner-txt-hidden'}>Chez vous, partout et ailleurs</p>
+            <p className= {location.pathname === "/" ? 'banner-txt' : 'd-none'}>Chez vous, partout et ailleurs</p>
           
         </div>
    

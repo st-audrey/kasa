@@ -18,8 +18,8 @@ function Header() {
             </Link>
             
             <nav className='header-nav'>
-                <Link to="/" className={location.pathname === "/" ? "header-nav-link-active  header-nav-link" : " header-nav-link"}>Accueil</Link>
-                <Link to="/about" className={location.pathname  === "/about" ? "header-nav-link-active  header-nav-link" : "header-nav-link"}>A propos</Link> 
+                <Link to="/" className={location.pathname === "/" ? "header-nav-link-active  header-nav-link color-primary" : " header-nav-link color-primary"}>Accueil</Link>
+                <Link to="/about" className={location.pathname  === "/about" ? "header-nav-link-active  header-nav-link color-primary" : "header-nav-link color-primary"}>A propos</Link> 
             </nav>
 
         </header>

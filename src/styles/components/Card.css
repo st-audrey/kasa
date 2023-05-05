@@ -2,5 +2,17 @@
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  background: linear-gradient(180deg, #ff6060 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(180deg, #ff6060 0%, rgba(55, 55, 55, 0.5) 100%);
+}
+
+/* tablet */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+}
+
+/* phone */
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .card-container {
+    height: 255px;
+    width: 335px;
+  }
 }

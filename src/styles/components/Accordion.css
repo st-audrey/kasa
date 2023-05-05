@@ -38,11 +38,25 @@
   align-self: end;
 }
 
-.accordion-content-container {
+.accordion-carret-up {
+  transform: scaleY(-1);
+}
+
+.accordion-open {
   padding: 20px;
   width: 100%;
   color: white;
   border-radius: 0 0 5px 5px;
+}
+
+.accordion-show {
+  height: auto;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.accordion-close {
+  display: none;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
 .accordion-content {

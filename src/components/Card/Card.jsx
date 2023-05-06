@@ -1,9 +1,21 @@
 import '../../styles/components/Card.css'
 
-function Card() {
-  // titreDeLaLocation
+function Card({
+  title,
+  cover,
+  pictures,
+  description,
+  host,
+  rating,
+  location,
+  equipements,
+  tags,
+}) {
   return (
-    <article className="card">{/* <h3>{titreDeLaLocation}</h3> */}</article>
+    <article className="card">
+      <img className="card-cover" src={cover} alt={title} />
+      <h3 className="card-title">{title}</h3>
+    </article>
   )
 }
 

@@ -13,7 +13,7 @@ function Home() {
             <Card
               key={leasing.id}
               title={leasing.title}
-              cover={leasing.content}
+              cover={leasing.cover}
               pictures={leasing.pictures}
               description={leasing.description}
               host={leasing.host}

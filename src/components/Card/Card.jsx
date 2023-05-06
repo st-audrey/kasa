@@ -1,6 +1,7 @@
 import '../../styles/components/Card.css'
 
 function Card({
+  id,
   title,
   cover,
   pictures,

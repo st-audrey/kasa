@@ -12,6 +12,7 @@ function Home() {
           {Leasings.map((leasing) => (
             <Card
               key={leasing.id}
+              id={leasing.id}
               title={leasing.title}
               cover={leasing.cover}
               pictures={leasing.pictures}

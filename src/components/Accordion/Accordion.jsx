@@ -2,7 +2,7 @@ import '../../styles/components/Accordion.css'
 import carret from '../../assets/carret.png'
 import { useState } from 'react'
 
-function Accordion(props) {
+function Accordion({ title, content }) {
   const [open, setOpen] = useState(false)
 
   const toggle = (i) => {
@@ -14,7 +14,7 @@ function Accordion(props) {
     <>
       <div className="accordion-container background-primary">
         <div className="accordion-title-container">
-          <p className="accordion-title">{props.title}</p>
+          <p className="accordion-title">{title}</p>
         </div>
         <div className="accordion-carret-container">
           <img
@@ -35,7 +35,7 @@ function Accordion(props) {
             : 'accordion-close background-secondary'
         }
       >
-        <p className="accordion-content color-primary">{props.content}</p>
+        <p className="accordion-content color-primary">{content}</p>
       </div>
     </>
   )

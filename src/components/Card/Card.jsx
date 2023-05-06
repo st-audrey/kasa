@@ -14,7 +14,7 @@ function Card({
   tags,
 }) {
   return (
-    <Link className="card">
+    <Link to={`/leasing/${id}`} className="card">
       <img className="card-cover" src={cover} alt={title} />
       <h3 className="card-title">{title}</h3>
     </Link>

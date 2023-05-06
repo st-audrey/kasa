@@ -22,7 +22,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/leasing" element={<Leasing />} />
+      <Route path="/leasing/:id" element={<Leasing />} />
       <Route path="*" element={<Error404 />} />
     </Route>
   )

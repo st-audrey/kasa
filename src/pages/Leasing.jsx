@@ -1,7 +1,9 @@
+import { useParams } from 'react-router-dom'
 import '../styles/Leasing.css'
 
 function Leasing() {
-  return <div>TOTO</div>
+  const params = useParams()
+  return <div>{params.id}</div>
 }
 
 export default Leasing

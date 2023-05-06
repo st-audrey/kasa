@@ -9,8 +9,8 @@ import './styles/index.css'
 import Header from './components/Header/Header'
 
 // Pages
-import Home from './pages/Home/Home'
-import About from './pages/Home/About'
+import Home from './pages/Home'
+import About from './pages/About'
 import Error404 from './components/Error/Error404'
 import Footer from './components/Footer/Footer'
 

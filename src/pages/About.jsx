@@ -1,7 +1,7 @@
-import Accordion from '../../components/Accordion/Accordion'
-import Banner from '../../components/Banner/Banner'
+import Accordion from '../components/Accordion/Accordion'
+import Banner from '../components/Banner/Banner'
 
-import '../../styles/About.css'
+import '../styles/About.css'
 
 function About() {
   const accordionThemes = [

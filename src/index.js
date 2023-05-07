@@ -5,7 +5,7 @@ import {
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
-  Route,
+  Route
 } from 'react-router-dom'
 
 import './styles/index.css'

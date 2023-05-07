@@ -16,13 +16,10 @@ function Banner() {
         location.pathname === '/'
           ? 'banner-container banner-common banner-home'
           : 'banner-container banner-common banner-about'
-      }
-    >
+      }>
       <img
         className={
-          location.pathname === '/'
-            ? 'banner-img banner-common'
-            : 'banner-img banner-about'
+          location.pathname === '/' ? 'banner-img banner-common' : 'banner-img banner-about'
         }
         src={imageToDisplay}
         alt="..."

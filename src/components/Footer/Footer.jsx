@@ -7,10 +7,7 @@ function Footer() {
   const location = useLocation()
 
   return (
-    <footer
-      className={
-        location.pathname === '/' || location.pathname === '/about' ? 'footer-container' : 'd-none'
-      }>
+    <footer className={location.pathname === '/Error404' ? 'd-none' : 'footer-container'}>
       <Link to="/" className="m-0-auto">
         <img
           className="footer-logo"

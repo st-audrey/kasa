@@ -3,10 +3,12 @@ import carret from '../../assets/carret.png'
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
-function Accordion({ title, content }) {
+function Accordion({ title, content, contentType, componentLocation }) {
   Accordion.propTypes = {
     title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired
+    content: PropTypes.string.isRequired,
+    contentType: PropTypes.string.isRequired,
+    componentLocation: PropTypes.string.isRequired
   }
 
   const [open, setOpen] = useState(false)
@@ -17,9 +19,19 @@ function Accordion({ title, content }) {
 
   return (
     <>
-      <div className="accordion-container background-primary">
+      <div
+        className={
+          componentLocation == 'about'
+            ? 'accordion-container-about background-primary'
+            : 'accordion-container-leasing background-primary'
+        }>
         <div className="accordion-title-container">
-          <p className="accordion-title">{title}</p>
+          <p
+            className={
+              componentLocation == 'about' ? 'accordion-title-about' : 'accordion-title-leasing'
+            }>
+            {title}
+          </p>
         </div>
         <div className="accordion-carret-container">
           <img
@@ -37,7 +49,17 @@ function Accordion({ title, content }) {
             ? 'accordion-open background-secondary accordion-show'
             : 'accordion-close background-secondary'
         }>
-        <p className="accordion-content color-primary">{content}</p>
+        {contentType == 'text' && componentLocation == 'about' ? (
+          <p className="accordion-content-about color-primary">{content}</p>
+        ) : contentType == 'text' && componentLocation == 'leasing' ? (
+          <p className="accordion-content-leasing color-primary">{content}</p>
+        ) : contentType == 'list' ? (
+          <ul className="accordion-equipement-list color-primary">
+            {content.map((equipment) => (
+              <li key={equipment}>{equipment}</li>
+            ))}
+          </ul>
+        ) : null}
       </div>
     </>
   )

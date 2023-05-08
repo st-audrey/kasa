@@ -5,6 +5,7 @@ import Tag from '../components/Tag/Tag'
 import Leasings from '../data/logements.json'
 import Error404 from '../components/Error/Error404'
 import { ReactComponent as Star } from '../assets/star.svg'
+import Accordion from '../components/Accordion/Accordion'
 
 function Leasing() {
   const params = useParams()
@@ -51,6 +52,24 @@ function Leasing() {
             <span className="leasing-host-name color-primary">{currentLeasing.host.name}</span>
             <img className="leasing-host-picture" src={currentLeasing.host.picture}></img>
           </div>
+        </div>
+      </div>
+      <div className="leasing-equipment-container">
+        <div className="leasing-equipment">
+          <Accordion
+            title="Description"
+            content={currentLeasing.description}
+            contentType="text"
+            componentLocation="leasing"
+          />
+        </div>
+        <div className="leasing-equipment">
+          <Accordion
+            title="Equipements"
+            content={currentLeasing.equipments}
+            contentType="list"
+            componentLocation="leasing"
+          />
         </div>
       </div>
     </>

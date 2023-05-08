@@ -1,7 +1,17 @@
-.accordion-container {
+.accordion-container-about {
   margin-top: 30px;
   padding: 0 20px 0;
   height: 47px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.accordion-container-leasing {
+  margin-top: 30px;
+  padding: 0 20px 0;
+  height: 30px;
   color: white;
   border-radius: 5px;
   display: flex;
@@ -16,8 +26,13 @@
   justify-content: center;
 }
 
-.accordion-title {
+.accordion-title-about {
   font-size: 24px;
+  font-weight: 500;
+}
+
+.accordion-title-leasing {
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -57,10 +72,25 @@
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
-.accordion-content {
+.accordion-content-about {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
+}
+
+.accordion-content-leasing {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.accordion-equipement-list {
+  padding-inline-start: 0px;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
 }
 
 /* tablet */
@@ -75,7 +105,7 @@
     height: 30px;
   }
 
-  .accordion-title {
+  .accordion-title-about {
     font-size: 13px;
     font-weight: 500;
   }
@@ -84,7 +114,9 @@
     width: 12px;
   }
 
-  .accordion-content {
+  .accordion-content-about,
+  .accordion-content-leasing,
+  .accordion-equipement-list {
     font-size: 12px;
     font-weight: 400;
     line-height: 17px;
@@ -92,6 +124,6 @@
   }
 
   .accordion-open {
-    padding: 20px 10px 50px 10px;
+    padding: 15px 10px 0px 10px;
   }
 }

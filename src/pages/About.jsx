@@ -15,7 +15,13 @@ function About() {
           <Banner />
           <div className="container">
             {accordionThemes.map((theme) => (
-              <Accordion key={theme.id} title={theme.title} content={theme.content} />
+              <Accordion
+                key={theme.id}
+                title={theme.title}
+                content={theme.content}
+                contentType="text"
+                componentLocation="about"
+              />
             ))}
           </div>
         </>

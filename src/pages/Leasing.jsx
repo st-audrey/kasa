@@ -4,14 +4,25 @@ import Slider from '../components/Slider/Slider'
 import Tag from '../components/Tag/Tag'
 import Leasings from '../data/logements.json'
 import Error404 from '../components/Error/Error404'
+import { ReactComponent as Star } from '../assets/star.svg'
 
 function Leasing() {
   const params = useParams()
   const leasingId = params.id
   const currentLeasing = Leasings.filter((leasing) => leasing.id == leasingId)[0]
-
   if (!currentLeasing) {
     return <Error404 />
+  }
+
+  const starGrey = '#E3E3E3'
+  const starRed = '#FF6060'
+  const currentLeasingRating = currentLeasing.rating
+
+  let ratingColors = new Array(5)
+  ratingColors.fill(starGrey, 0, 5)
+
+  for (let i = 0; i < currentLeasingRating; i++) {
+    ratingColors[i] = starRed
   }
 
   console.log(currentLeasing)
@@ -34,6 +45,11 @@ function Leasing() {
           <div className="leasing-host-container">
             <p className="leasing-host-name color-primary">{currentLeasing.host.name}</p>
             <img className="leasing-host-picture" src={currentLeasing.host.picture}></img>
+          </div>
+          <div className="leasing-rating-container">
+            {ratingColors.map((color, i) => (
+              <Star key={i} fill={color} />
+            ))}
           </div>
         </div>
       </div>

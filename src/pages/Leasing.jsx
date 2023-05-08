@@ -42,14 +42,14 @@ function Leasing() {
         </div>
 
         <div className="leasing-host-rating">
-          <div className="leasing-host-container">
-            <p className="leasing-host-name color-primary">{currentLeasing.host.name}</p>
-            <img className="leasing-host-picture" src={currentLeasing.host.picture}></img>
-          </div>
           <div className="leasing-rating-container">
             {ratingColors.map((color, i) => (
-              <Star key={i} fill={color} />
+              <Star key={i} fill={color} className="leasing-star" />
             ))}
+          </div>
+          <div className="leasing-host-container">
+            <span className="leasing-host-name color-primary">{currentLeasing.host.name}</span>
+            <img className="leasing-host-picture" src={currentLeasing.host.picture}></img>
           </div>
         </div>
       </div>

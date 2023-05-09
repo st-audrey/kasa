@@ -26,8 +26,6 @@ function Leasing() {
     ratingColors[i] = starRed
   }
 
-  console.log(currentLeasing)
-
   return (
     <>
       <Slider picturesArray={currentLeasing.pictures} />

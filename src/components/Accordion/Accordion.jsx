@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 function Accordion({ title, content, contentType, componentLocation }) {
   Accordion.propTypes = {
     title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
+    content: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
     contentType: PropTypes.string.isRequired,
     componentLocation: PropTypes.string.isRequired
   }
@@ -55,8 +55,8 @@ function Accordion({ title, content, contentType, componentLocation }) {
           <p className="accordion-content-leasing color-primary">{content}</p>
         ) : contentType == 'list' ? (
           <ul className="accordion-equipement-list color-primary">
-            {content.map((equipment) => (
-              <li key={equipment}>{equipment}</li>
+            {content.map((equipment, i) => (
+              <li key={i}>{equipment}</li>
             ))}
           </ul>
         ) : null}

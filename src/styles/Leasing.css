@@ -12,7 +12,8 @@
 }
 
 .leasing-title {
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: 2.65vw;
   font-weight: 500;
 }
 
@@ -64,6 +65,7 @@
 }
 
 .leasing-rating-container {
+  min-width: 195px;
   margin-top: 20px;
 }
 

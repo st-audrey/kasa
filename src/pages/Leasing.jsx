@@ -30,7 +30,7 @@ function Leasing() {
 
   return (
     <>
-      <Slider />
+      <Slider picturesArray={currentLeasing.pictures} />
       <div className="leasing-infos-container">
         <div className="leasing-infos">
           <p className="leasing-title color-primary m-0">{currentLeasing.title}</p>

@@ -31,8 +31,8 @@
   display: flex;
   flex-direction: row;
   text-align: right;
-  justify-content: end;
-  align-items: end;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .leasing-host-picture {

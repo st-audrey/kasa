@@ -64,12 +64,10 @@
 
 .accordion-show {
   height: auto;
-  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
 .accordion-close {
   display: none;
-  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
 .accordion-content-about {

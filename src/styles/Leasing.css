@@ -70,6 +70,7 @@
 }
 
 .leasing-equipment-container {
+  min-height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -103,7 +104,7 @@
   .leasing-equipment-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0 100px 0 100px;
   }
 
@@ -168,9 +169,10 @@
   }
 
   .leasing-equipment-container {
+    min-height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0 20px 0 20px;
   }
 

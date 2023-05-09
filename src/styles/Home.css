@@ -13,12 +13,17 @@
 
 /* tablet */
 @media screen and (max-width: 992px) and (min-width: 768px) {
-  .card-wrapper {
+  /* .card-wrapper {
     justify-content: center;
     align-items: center;
-  }
+  } */
 }
 
 /* phone */
 @media screen and (max-width: 768px) and (min-width: 320px) {
+  .card-container {
+    background-color: white;
+    margin: 20px 20px 0px;
+    padding: 0;
+  }
 }

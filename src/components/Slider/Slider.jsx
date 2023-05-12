@@ -6,6 +6,7 @@ import slider_carret from '../../assets/slider_carret.png'
 class Slider extends Component {
   constructor(props) {
     super(props)
+
     this.changeSlide = this.changeSlide.bind(this)
     this.picturesArray = this.props.picturesArray
     this.currentIndex = 1

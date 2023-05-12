@@ -1,6 +1,6 @@
 .card-container {
   border-radius: 20px;
-  padding: 55px 50px 55px;
+  padding: 55px 0px 55px;
   margin: 45px 100px 50px;
 }
 
@@ -13,10 +13,6 @@
 
 /* tablet */
 @media screen and (max-width: 992px) and (min-width: 768px) {
-  /* .card-wrapper {
-    justify-content: center;
-    align-items: center;
-  } */
 }
 
 /* phone */
@@ -25,5 +21,12 @@
     background-color: white;
     margin: 20px 20px 0px;
     padding: 0;
+  }
+
+  .card-wrapper {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }

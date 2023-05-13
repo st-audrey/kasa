@@ -36,7 +36,7 @@ class Slider extends Component {
     return (
       <div className="slider-container">
         <img className="slider-img" src={this.picturesArray[this.currentIndex - 1]} alt="" />
-        <div className={this.picturesArray.length < 2 ? 'd-none' : 'toto'}>
+        <div className={this.picturesArray.length < 2 ? 'd-none' : null}>
           <img
             src={slider_carret}
             alt="..."

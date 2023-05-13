@@ -16,38 +16,43 @@ class Slider extends Component {
   }
 
   changeSlide(direction) {
-    if (direction == 'next' && this.currentIndex == this.picturesArray.length) {
-      this.currentIndex = 1
-    } else if (direction == 'next' && this.currentIndex != this.picturesArray.length) {
-      this.currentIndex += 1
-    } else if (direction == 'previous' && this.currentIndex == 1) {
-      this.currentIndex = this.picturesArray.length
+    if (this.picturesArray.length > 1) {
+      if (direction == 'next' && this.currentIndex == this.picturesArray.length) {
+        this.currentIndex = 1
+      } else if (direction == 'next' && this.currentIndex != this.picturesArray.length) {
+        this.currentIndex += 1
+      } else if (direction == 'previous' && this.currentIndex == 1) {
+        this.currentIndex = this.picturesArray.length
+      } else {
+        this.currentIndex -= 1
+      }
+      this.state != this.currentIndex ? this.setState({ value: this.currentIndex }) : null
     } else {
-      this.currentIndex -= 1
+      return
     }
-
-    this.state != this.currentIndex ? this.setState({ value: this.currentIndex }) : null
   }
 
   render() {
     return (
       <div className="slider-container">
         <img className="slider-img" src={this.picturesArray[this.currentIndex - 1]} alt="" />
-        <img
-          src={slider_carret}
-          alt="..."
-          className="slider-next slider-command"
-          onClick={() => this.changeSlide('next')}
-        />
-        <img
-          src={slider_carret}
-          alt="..."
-          className="slider-previous slider-command"
-          onClick={() => this.changeSlide('previous')}
-        />
-        <p className="slider-count">
-          {this.currentIndex}/{this.picturesArray.length}
-        </p>
+        <div className={this.picturesArray.length < 2 ? 'd-none' : 'toto'}>
+          <img
+            src={slider_carret}
+            alt="..."
+            className="slider-next slider-command"
+            onClick={() => this.changeSlide('next')}
+          />
+          <img
+            src={slider_carret}
+            alt="..."
+            className="slider-previous slider-command"
+            onClick={() => this.changeSlide('previous')}
+          />
+          <p className="slider-count">
+            {this.currentIndex}/{this.picturesArray.length}
+          </p>
+        </div>
       </div>
     )
   }

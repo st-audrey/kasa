@@ -3,7 +3,7 @@ import '../styles/Leasing.css'
 import Slider from '../components/Slider/Slider'
 import Tag from '../components/Tag/Tag'
 import Leasings from '../data/logements.json'
-import Error404 from '../components/Error/Error404'
+import Error404 from './Error404'
 import { ReactComponent as Star } from '../assets/star.svg'
 import Accordion from '../components/Accordion/Accordion'
 

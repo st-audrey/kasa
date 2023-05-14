@@ -15,7 +15,7 @@ import RootLayout from './layout/RootLayout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Leasing from './pages/Leasing'
-import Error404 from './components/Error/Error404'
+import Error404 from './pages/Error404'
 
 const router = createBrowserRouter(
   createRoutesFromElements(

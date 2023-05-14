@@ -12,9 +12,8 @@ function Accordion({ title, content, contentType, componentLocation }) {
   }
 
   const [open, setOpen] = useState(false)
-  const toggle = (i) => {
+  const handleClick = () => {
     setOpen(!open)
-    return i
   }
 
   return (
@@ -37,8 +36,8 @@ function Accordion({ title, content, contentType, componentLocation }) {
           <img
             className={open ? 'accordion-carret accordion-carret-up' : 'accordion-carret'}
             src={carret}
-            alt="..."
-            onClick={toggle}
+            alt="Cliquez pour afficher les détails"
+            onClick={handleClick}
           />
         </div>
       </div>

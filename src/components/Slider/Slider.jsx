@@ -36,23 +36,26 @@ class Slider extends Component {
     return (
       <div className="slider-container">
         <img className="slider-img" src={this.picturesArray[this.currentIndex - 1]} alt="" />
-        <div className={this.picturesArray.length < 2 ? 'd-none' : null}>
-          <img
-            src={slider_carret}
-            alt="..."
-            className="slider-next slider-command"
-            onClick={() => this.changeSlide('next')}
-          />
-          <img
-            src={slider_carret}
-            alt="..."
-            className="slider-previous slider-command"
-            onClick={() => this.changeSlide('previous')}
-          />
-          <p className="slider-count">
-            {this.currentIndex}/{this.picturesArray.length}
-          </p>
-        </div>
+
+        {this.picturesArray.length > 1 && (
+          <div>
+            <img
+              src={slider_carret}
+              alt="..."
+              className="slider-next slider-command"
+              onClick={() => this.changeSlide('next')}
+            />
+            <img
+              src={slider_carret}
+              alt="..."
+              className="slider-previous slider-command"
+              onClick={() => this.changeSlide('previous')}
+            />
+            <p className="slider-count">
+              {this.currentIndex}/{this.picturesArray.length}
+            </p>
+          </div>
+        )}
       </div>
     )
   }

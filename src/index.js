@@ -20,10 +20,10 @@ import Error404 from './pages/Error404'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route path="/" element={<Home />} />
+      <Route index element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/leasing/:id" element={<Leasing />} />
-      <Route path="*" element={<Error404 />} />
+      <Route path="/*" element={<Error404 />} />
     </Route>
   )
 )

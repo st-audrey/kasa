@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 
 import '../../styles/components/Header.css'
@@ -21,24 +21,28 @@ function Header() {
       </Link>
 
       <nav className="header-nav">
-        <Link
+        <NavLink
           to="/"
-          className={
-            location.pathname === '/'
-              ? 'header-nav-link-active  header-nav-link color-primary'
-              : ' header-nav-link color-primary'
+          className={({ isActive, isPending }) =>
+            location.pathname === '/' && isPending
+              ? ''
+              : location.pathname === '/' && isActive
+              ? 'active header-nav-link-active header-nav-link color-primary'
+              : 'header-nav-link color-primary'
           }>
           Accueil
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/about"
-          className={
-            location.pathname === '/about'
-              ? 'header-nav-link-active  header-nav-link color-primary'
+          className={({ isActive, isPending }) =>
+            location.pathname === '/about' && isPending
+              ? ''
+              : location.pathname === '/about' && isActive
+              ? 'active header-nav-link-active header-nav-link color-primary'
               : 'header-nav-link color-primary'
           }>
           A propos
-        </Link>
+        </NavLink>
       </nav>
     </header>
   )
